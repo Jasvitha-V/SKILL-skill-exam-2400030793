@@ -65,7 +65,7 @@ public class GymMemberRepositoryTest
         System.out.println("Name: " + member.get().getName());
 
         Optional<GymMember> invalidMember =
-                repository.findById(Long.MAX_VALUE);
+                repository.findById(1L);
 
         assertFalse(invalidMember.isPresent());
     }
